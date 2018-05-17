@@ -12,12 +12,14 @@ public class IntToEng {
 		System.out.println(translateEng(input));
 
 	}
-	static String translateEng(int n) {
+	public static String translateEng(int n) {
 		String s;
 		String one[] = {"zero","one","two","three","four","five","six","seven","eight","nine"};
-		String ten[] = {"ten"};
-		if(n%10==0) s = one[n];
-		else s = ten[n];
+		String ten[] = {"ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"};
+		String Twoten = "twenty";
+		if(n/10==1)s = ten[n%10];
+		else if(n%10!=0) s = one[n];
+		else s = Twoten;
 		return s;
 	}
 }
