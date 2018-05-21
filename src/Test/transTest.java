@@ -199,4 +199,36 @@ public class transTest {
 		assertThat(actual, is(expected));
 	}
 	
+	@Test
+	public void translateEngで236を英語に変換できる(){
+		IntToEng ite = new IntToEng();
+		String expected = "Two Hundred ThirtySix";
+		String actual = ite.translateEng(236);
+		assertThat(actual, is(expected));
+	}
+	
+	@Test
+	public void translateEngで333を英語に変換できる(){
+		IntToEng ite = new IntToEng();
+		String expected = "Three Hundred ThirtyThree";
+		String actual = ite.translateEng(333);
+		assertThat(actual, is(expected));
+	}
+	
+	@Test
+	public void translateEngで491を英語に変換できる(){
+		IntToEng ite = new IntToEng();
+		String expected = "Four Hundred NinetyOne";
+		String actual = ite.translateEng(491);
+		assertThat(actual, is(expected));
+	}
+	
+	@Test
+	public void translateEngで550を英語に変換できる(){
+		IntToEng ite = new IntToEng();
+		String expected = "Five Hundred Fifty";
+		String actual = ite.translateEng(550);
+		assertThat(actual, is(expected));
+	}
+	
 }
