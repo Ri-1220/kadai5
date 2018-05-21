@@ -18,6 +18,10 @@ public class IntToEng {
 		String one[] = {"Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine"};
 		String ten[] = {"Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen"};
 		if(n/100==1) str = "One Hundred ";
+		else if(n/100==2) str = "Two Hundred ";
+		else if(n/100==3) str = "Three Hundred ";
+		else if(n/100==4) str = "Four Hundred ";
+		else if(n/100==5) str = "Five Hundred ";
 		if(m/10==9) {
 			if(m%10==0) s = "Ninety";
 			else s="Ninety"+one[m%10];
