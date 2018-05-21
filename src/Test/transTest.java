@@ -40,5 +40,77 @@ public class transTest {
 		String actual = ite.translateEng(20);
 		assertThat(actual, is(expected));
 	}
+	
+	@Test
+	public void translateEngで25を英語に変換できる(){
+		IntToEng ite = new IntToEng();
+		String expected = "twentyfive";
+		String actual = ite.translateEng(25);
+		assertThat(actual, is(expected));
+	}
+	
+	@Test
+	public void translateEngで30を英語に変換できる(){
+		IntToEng ite = new IntToEng();
+		String expected = "thirty";
+		String actual = ite.translateEng(30);
+		assertThat(actual, is(expected));
+	}
+	
+	@Test
+	public void translateEngで35を英語に変換できる(){
+		IntToEng ite = new IntToEng();
+		String expected = "thirtyfive";
+		String actual = ite.translateEng(35);
+		assertThat(actual, is(expected));
+	}
+	
+	@Test
+	public void translateEngで40を英語に変換できる(){
+		IntToEng ite = new IntToEng();
+		String expected = "fourty";
+		String actual = ite.translateEng(40);
+		assertThat(actual, is(expected));
+	}
+	
+	@Test
+	public void translateEngで45を英語に変換できる(){
+		IntToEng ite = new IntToEng();
+		String expected = "fourtyfive";
+		String actual = ite.translateEng(45);
+		assertThat(actual, is(expected));
+	}
+	
+	@Test
+	public void translateEngで50を英語に変換できる(){
+		IntToEng ite = new IntToEng();
+		String expected = "fifty";
+		String actual = ite.translateEng(50);
+		assertThat(actual, is(expected));
+	}
+	
+	@Test
+	public void translateEngで55を英語に変換できる(){
+		IntToEng ite = new IntToEng();
+		String expected = "fiftyfive";
+		String actual = ite.translateEng(55);
+		assertThat(actual, is(expected));
+	}
+	
+	@Test
+	public void translateEngで60を英語に変換できる(){
+		IntToEng ite = new IntToEng();
+		String expected = "sixty";
+		String actual = ite.translateEng(60);
+		assertThat(actual, is(expected));
+	}
+	
+	@Test
+	public void translateEngで65を英語に変換できる(){
+		IntToEng ite = new IntToEng();
+		String expected = "sixtyfive";
+		String actual = ite.translateEng(65);
+		assertThat(actual, is(expected));
+	}
 
 }
