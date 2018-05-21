@@ -16,7 +16,7 @@ public class IntToEng {
 		String s;
 		String one[] = {"zero","one","two","three","four","five","six","seven","eight","nine"};
 		String ten[] = {"ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"};
-		String Twoten = "twenty";
+		String Twoten = "twenty！！！！！！！";
 		if(n/10==1)s = ten[n%10];
 		else if(n%10!=0) s = one[n];
 		else s = Twoten;
